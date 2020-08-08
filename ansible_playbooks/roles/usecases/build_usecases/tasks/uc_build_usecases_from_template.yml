@@ -19,16 +19,16 @@
 
 - name: "UC: Set uc_L3_list CSV variables"
   set_fact:
-    L3_UseCaseId: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_UseCaseId') | list}}"
-    L1_Use_Case_Name: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L1_Use_Case_Name') | list}}"
-    L1_Use_Case_Identifier: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L1_Use_Case_Identifier') | list}}"
-    L2_Use_Case_Name: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L2_Use_Case_Name') | list}}"
-    L2_Use_Case_Identifier: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L2_Use_Case_Identifier') | list}}"
-    L3_Rule_Identifier: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Rule_Identifier') | list}}"
-    L3_Technical_Use_Case_Name: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Technical_Use_Case_Name') | list}}"
-    L3_Severity: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Severity') | list}}"
-    L3_Priority: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Priority') | list}}"
-    L3_Use_Case_Description: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Use_Case_Description') | list}}"
+    L3_UseCaseId: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_UseCaseId') | list | join('\", \"')}}"
+    L1_Use_Case_Name: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L1_Use_Case_Name') | list | join('\", \"')}}"
+    L1_Use_Case_Identifier: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L1_Use_Case_Identifier') | list | join('\", \"')}}"
+    L2_Use_Case_Name: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L2_Use_Case_Name') | list | join('\", \"')}}"
+    L2_Use_Case_Identifier: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L2_Use_Case_Identifier') | list | join('\", \"')}}"
+    L3_Rule_Identifier: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Rule_Identifier') | list | join('\", \"')}}"
+    L3_Technical_Use_Case_Name: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Technical_Use_Case_Name')| list | join('\", \"')}}"
+    L3_Severity: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Severity') | list | join('\", \"')}}"
+    L3_Priority: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Priority') | list | join('\", \"')}}"
+    L3_Use_Case_Description: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Use_Case_Description') | list | join('\", \"')}}"
   with_items: "{{uc_usecase_derived_list_result}}"
 
 # https://github.com/ansible/ansible/issues/17136 : Due to the bug of fileglob, using another method
