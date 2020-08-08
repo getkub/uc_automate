@@ -8,3 +8,7 @@ uc_base_tasks_dir: "{{uc_base_dir}}/tasks"
 uc_base_dir_template: "{{uc_base_dir}}/build_usecases/uc_templates"
 
 # -------------------------------------------------------------- #
+# Lookup Files and Configs loading
+# -------------------------------------------------------------- #
+
+uc_L3_csv: "{{uc_config_dir}}/uc_L3.csv"

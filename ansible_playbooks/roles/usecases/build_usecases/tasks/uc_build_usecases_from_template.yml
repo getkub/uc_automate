@@ -1,0 +1,40 @@
+---
+
+- name: "UC: List templates and get filenames"
+  find:
+      paths: "{{uc_base_dir_template}}"
+      patterns: "*.j2"
+      file_type: file
+  register: uc_usecase_templates
+
+# https://stackoverflow.com/questions/29399581/using-set-facts-and-with-items-together-in-ansible
+- name: "UC: Derive usecases from filenames"
+  set_fact: uc_usecase_derived_list="{{item.path | basename | replace('.conf.j2', '')}}"
+  with_items: "{{uc_usecase_templates.files}}"
+  register: uc_usecase_derived_list_result
+
+- name: "UC: dummy"
+  set_fact: foo="{{ uc_usecase_derived_list_result.results | map(attribute='ansible_facts.uc_usecase_derived_list') | list }}"
+
+
+- name: "UC: Set uc_L3_list CSV variables"
+  set_fact:
+    L3_UseCaseId: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_UseCaseId') | list}}"
+    L1_Use_Case_Name: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L1_Use_Case_Name') | list}}"
+    L1_Use_Case_Identifier: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L1_Use_Case_Identifier') | list}}"
+    L2_Use_Case_Name: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L2_Use_Case_Name') | list}}"
+    L2_Use_Case_Identifier: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L2_Use_Case_Identifier') | list}}"
+    L3_Rule_Identifier: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Rule_Identifier') | list}}"
+    L3_Technical_Use_Case_Name: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Technical_Use_Case_Name') | list}}"
+    L3_Severity: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Severity') | list}}"
+    L3_Priority: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Priority') | list}}"
+    L3_Use_Case_Description: "{{ uc_L3_list | selectattr('L3_UseCaseId','match','^UC_0001$')| map(attribute='L3_Use_Case_Description') | list}}"
+  with_items: "{{uc_usecase_derived_list_result}}"
+
+# https://github.com/ansible/ansible/issues/17136 : Due to the bug of fileglob, using another method
+- name: "UC: Build use-cases from ready-made templates"
+  template:
+    src: "{{ item }}"
+    dest: "{{build_base}}/{{buildDir}}/usecases/usecases_logic/{{ item | replace('.j2', '') | replace( uc_base_dir_template , '')}}"
+  with_lines:
+    - "find {{uc_base_dir_template}} -type f -name '*.j2'"

@@ -3,3 +3,7 @@
 - name: "UC: Pre-requisite Checks"
   import_tasks: uc_prereq_checks.yml
   tags: [uc_prereq_checks]
+
+- name: "UC: Build use-cases from template"
+  import_tasks: uc_build_usecases_from_template.yml
+  tags: [uc_build_usecases_from_template]
