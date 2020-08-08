@@ -1,11 +1,22 @@
 ---
 
 # -------------------------------------------------------------- #
+# UseCase common Configs
 # -------------------------------------------------------------- #
 uc_config_dir: "{{src_base}}/{{configs}}/{{usecase_configs}}"
 uc_base_dir: "roles/usecases/"
 uc_base_tasks_dir: "{{uc_base_dir}}/tasks"
+
+# -------------------------------------------------------------- #
+# UseCase Logic Configs
+# -------------------------------------------------------------- #
 uc_base_dir_template: "{{uc_base_dir}}/build_usecases/uc_templates"
+
+# -------------------------------------------------------------- #
+# Playbook Configs
+# -------------------------------------------------------------- #
+pb_base_dir_template: "{{uc_base_dir}}/build_playbooks/playbook_templates"
+
 
 # -------------------------------------------------------------- #
 # Lookup Files and Configs loading
