@@ -1,0 +1,8 @@
+---
+
+- name: "PB: List templates and get filenames"
+  find:
+      paths: "{{pb_base_dir_template}}"
+      patterns: "*.md"
+      file_type: file
+  register: pb_playbook_templates

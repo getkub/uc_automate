@@ -1,0 +1,9 @@
+---
+
+- name: "PB: Pre-requisite Checks"
+  import_tasks: pb_prereq_checks.yml
+  tags: [pb_prereq_checks]
+
+- name: "PB: Build playbooks from template"
+  import_tasks: pb_build_playbooks_from_template.yml
+  tags: [pb_build_playbooks_from_template]
