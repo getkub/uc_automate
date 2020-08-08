@@ -1,0 +1,5 @@
+---
+# Common roles shared for ELK and Beats
+
+- import_tasks: validate_build_host.yml
+  tags: [validate_build_host]

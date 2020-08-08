@@ -1,0 +1,6 @@
+---
+  
+- name: "Test to See if selinux is running. DO NOT continue if mode=enforced"
+  debug:
+    msg: "ansible_selinux.mode={{ ansible_selinux.mode }}"
+  when: ansible_selinux is defined and ansible_selinux !=False and ansible_selinux.status == 'enabled'

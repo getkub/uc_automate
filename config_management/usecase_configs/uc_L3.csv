@@ -1,0 +1,170 @@
+L3_UseCaseId,L1_Use_Case_Name,L1_Use_Case_Identifier,L2_Use_Case_Name,L2_Use_Case_Identifier,L3_Rule_Identifier,L3_Technical_Use_Case_Name,L3_Severity,L3_Priority,L3_Use_Case_Description
+UC_0001,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-07,Detect Data Obfuscation,3,5,https://attack.mitre.org/wiki/Technique/T1001
+UC_0002,Actions on Objectives,AO,Data exfiltration,AO-EXF,AO-EXF-02,Detect Anomalous Compressed Data in Transit,3,5,https://attack.mitre.org/wiki/Technique/T1002
+UC_0003,Actions on Objectives,AO,Credential theft,AO-CRE,AO-CRE-01,Detect Credential Dumping Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1003
+UC_0004,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-31,Detect Modifications of Winlogon Helper DLL Registry Keys,3,5,https://attack.mitre.org/wiki/Technique/T1004
+UC_0005,Actions on Objectives,AO,Data collection,AO-COL,AO-COL-05,Detect Data Collection from Local System,3,5,https://attack.mitre.org/wiki/Technique/T1005
+UC_0006,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-06,Detect File System Logical Offset Access,3,5,https://attack.mitre.org/wiki/Technique/T1006
+UC_0007,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-16,Detect System Service Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1007
+UC_0008,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-08,Detect Existence of Fallback Channels,3,5,https://attack.mitre.org/wiki/Technique/T1008
+UC_0009,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-01,Detect Presence of Binary Padding to Files,3,5,https://attack.mitre.org/wiki/Technique/T1009
+UC_0010,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-02,Detect Application Window Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1010
+UC_0011,Actions on Objectives,AO,Data exfiltration,AO-EXF,AO-EXF-07,Detect Exfiltration Over Other Network Medium,3,5,https://attack.mitre.org/wiki/Technique/T1011
+UC_0012,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-09,Detect Anomalous Registry Query,3,5,https://attack.mitre.org/wiki/Technique/T1012
+UC_0013,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-14,Detect Unauthorized Local Port Monitoring Installation,3,5,https://attack.mitre.org/wiki/Technique/T1013
+UC_0014,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-17,Detect Rootkit Presence,3,5,https://attack.mitre.org/wiki/Technique/T1014
+UC_0015,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-02,Detect Modifications of Accessibility Feature Binaries,3,5,https://attack.mitre.org/wiki/Technique/T1015
+UC_0016,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-13,Detect System Network Configuration Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1016
+UC_0017,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-06,Detect Unauthorized Usage of Application Deployment Software,3,5,https://attack.mitre.org/wiki/Technique/T1017
+UC_0018,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-10,Detect Remote System Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1018
+UC_0019,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-28,Detect System Firmware Manipulation,3,5,https://attack.mitre.org/wiki/Technique/T1019
+UC_0020,Actions on Objectives,AO,Data exfiltration,AO-EXF,AO-EXF-01,Detect Automated Exfiltration Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1020
+UC_0021,Actions on Objectives,AO,Lateral movement,AO-LAT,AO-LAT-05,Detect Presence of Unauthorized Remote Services,3,5,https://attack.mitre.org/wiki/Technique/T1021
+UC_0022,Actions on Objectives,AO,Data exfiltration,AO-EXF,AO-EXF-03,Detect Anomalous Encrypted Data in Transit,3,5,https://attack.mitre.org/wiki/Technique/T1022
+UC_0023,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-26,Detect Anomalous Shortcut Modification,3,5,https://attack.mitre.org/wiki/Technique/T1023
+UC_0024,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-05,Detect Custom Cryptographic Protocol,3,5,https://attack.mitre.org/wiki/Technique/T1024
+UC_0025,Actions on Objectives,AO,Data collection,AO-COL,AO-COL-07,Detect Data Collection from Removable Media,3,5,https://attack.mitre.org/wiki/Technique/T1025
+UC_0026,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-10,Detect Existence of Multiband Communication,3,5,https://attack.mitre.org/wiki/Technique/T1026
+UC_0027,Actions on Objectives,AO,"File corruption, encryption and unauthorized access",AO-FIL,AO-FIL-03,Detect Presence of Obfuscated Files or Information,3,5,https://attack.mitre.org/wiki/Technique/T1027
+UC_0028,Actions on Objectives,AO,Lateral movement,AO-LAT,AO-LAT-11,Detect Unauthorized Windows Remote Management Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1028
+UC_0029,Actions on Objectives,AO,Data exfiltration,AO-EXF,AO-EXF-09,Detect Scheduled Data Transfer,3,5,https://attack.mitre.org/wiki/Technique/T1029
+UC_0030,Actions on Objectives,AO,Data exfiltration,AO-EXF,AO-EXF-04,Detect Data Transfer Size Limit Evasion Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1030
+UC_0031,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-16,Detect Modification of Existing Service,3,5,https://attack.mitre.org/wiki/Technique/T1031
+UC_0032,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-13,Detect Anomalous Usage of Standard Cryptographic Protocol,3,5,https://attack.mitre.org/wiki/Technique/T1032
+UC_0033,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-15,Detect System Owner/User Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1033
+UC_0034,Actions on Objectives,AO,Privilege escalation,AO-PRI,AO-PRI-08,Detect Path Interception Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1034
+UC_0035,Policy Violations,PV,Unauthorized process launched,PV-PRC,PV-PRC-03,Detect Unauthorized Service Execution,3,5,https://attack.mitre.org/wiki/Technique/T1035
+UC_0036,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-04,Detect Masquerading Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1036
+UC_0037,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-08,Detect Modification of Logon Scripts,3,5,https://attack.mitre.org/wiki/Technique/T1037
+UC_0038,Actions on Objectives,AO,Privilege escalation,AO-PRI,AO-PRI-04,Detect DLL Search Order Hijacking Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1038
+UC_0039,Actions on Objectives,AO,Data collection,AO-COL,AO-COL-06,Detect Data Collection from Network Shared Drive,3,5,https://attack.mitre.org/wiki/Technique/T1039
+UC_0040,Actions on Objectives,AO,Credential theft,AO-CRE,AO-CRE-06,Detect Network Sniffing,3,5,https://attack.mitre.org/wiki/Technique/T1040
+UC_0041,Actions on Objectives,AO,Data exfiltration,AO-EXF,AO-EXF-06,Detect Exfiltration Over Command and Control Channel,3,5,https://attack.mitre.org/wiki/Technique/T1041
+UC_0042,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-06,Detect Anomalous Modifications of Default File Association,3,5,https://attack.mitre.org/wiki/Technique/T1042
+UC_0043,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-01,Detect Anomalous Usage of Commonly Used Port,3,5,https://attack.mitre.org/wiki/Technique/T1043
+UC_0044,Actions on Objectives,AO,Privilege escalation,AO-PRI,AO-PRI-06,Detect Abuse of File System Permissions Weakness,3,5,https://attack.mitre.org/wiki/Technique/T1044
+UC_0045,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-18,Detect Presence of Unauthorized Software Packing,3,5,https://attack.mitre.org/wiki/Technique/T1045
+UC_0046,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-04,Detect Network Service Scanning Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1046
+UC_0047,Policy Violations,PV,Unauthorized process launched,PV-PRC,PV-PRC-07,Detect Unauthorized Usage of Windows Management Instrumentation,3,5,https://attack.mitre.org/wiki/Technique/T1047
+UC_0048,Actions on Objectives,AO,Data exfiltration,AO-EXF,AO-EXF-05,Detect Exfiltration Over Alternative Protocol,3,5,https://attack.mitre.org/wiki/Technique/T1048
+UC_0049,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-14,Detect System Network Connections Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1049
+UC_0050,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-18,Detect Installation of New Service,3,5,https://attack.mitre.org/wiki/Technique/T1050
+UC_0051,Actions on Objectives,AO,Lateral movement,AO-LAT,AO-LAT-07,Detect Unauthorized Modifications to Shared Webroot,3,5,https://attack.mitre.org/wiki/Technique/T1051
+UC_0052,Actions on Objectives,AO,Data exfiltration,AO-EXF,AO-EXF-08,Detect Exfiltration Over Physical Medium,3,5,https://attack.mitre.org/wiki/Technique/T1052
+UC_0053,Actions on Objectives,AO,Privilege escalation,AO-PRI,AO-PRI-10,Detect Presence of Unauthorized Scheduled Task,3,5,https://attack.mitre.org/wiki/Technique/T1053
+UC_0054,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-12,Detect Indicator Transport Blocking Attempts,3,5,https://attack.mitre.org/wiki/Technique/T1054
+UC_0055,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-04,Detect DLL Injection Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1055
+UC_0056,Actions on Objectives,AO,Credential theft,AO-CRE,AO-CRE-03,Detect Input Capturing,3,5,https://attack.mitre.org/wiki/Technique/T1056
+UC_0057,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-08,Detect Process Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1057
+UC_0058,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-25,Detect Abuse of Service Registry Permissions Weakness,3,5,https://attack.mitre.org/wiki/Technique/T1058
+UC_0059,Actions on Objectives,AO,Lateral movement,AO-LAT,AO-LAT-12,Detect Unauthorized Usage of Command-Line Interface,3,5,https://attack.mitre.org/wiki/Technique/T1059
+UC_0060,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-23,Detect Unauthorized Modification of Registry Run Keys / Start Folder,3,5,https://attack.mitre.org/wiki/Technique/T1060
+UC_0061,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-11,Detect Unauthorized Use of Graphical User Interface for Remote Access,3,5,https://attack.mitre.org/wiki/Technique/T1061
+UC_0062,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-11,Detect Unauthorized type-1 Hypervisor Presence,3,5,https://attack.mitre.org/wiki/Technique/T1062
+UC_0063,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-11,Detect Security Software Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1063
+UC_0064,Policy Violations,PV,Unauthorized process launched,PV-PRC,PV-PRC-02,Detect Unauthorized Execution of Scripts,3,5,https://attack.mitre.org/wiki/Technique/T1064
+UC_0065,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-15,Detect Usage of Uncommonly Used Port,3,5,https://attack.mitre.org/wiki/Technique/T1065
+UC_0066,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-13,Detect Indicator Removal from Tools,3,5,https://attack.mitre.org/wiki/Technique/T1066
+UC_0067,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-05,Detect Bootkit Presence,3,5,https://attack.mitre.org/wiki/Technique/T1067
+UC_0068,Policy Violations,PV,Vulnerable system or service,PV-VUL,PV-VUL-01,Detect Vulnerability Exploitation Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1068
+UC_0069,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-07,Detect Permission Groups Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1069
+UC_0070,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-14,Detect Indicator Removal on Host,3,5,https://attack.mitre.org/wiki/Technique/T1070
+UC_0071,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-12,Detect Anomalous Usage of Standard Application Layer Protocol,3,5,https://attack.mitre.org/wiki/Technique/T1071
+UC_0072,Actions on Objectives,AO,Lateral movement,AO-LAT,AO-LAT-09,Detect Presence of Unauthorized or Modified Third-party Software,3,5,https://attack.mitre.org/wiki/Technique/T1072
+UC_0073,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-05,Detect DLL Side-Loading Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1073
+UC_0074,Actions on Objectives,AO,Data collection,AO-COL,AO-COL-04,Detect Staged Data,3,5,https://attack.mitre.org/wiki/Technique/T1074
+UC_0075,Actions on Objectives,AO,Lateral movement,AO-LAT,AO-LAT-01,Detect Pass the Hash Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1075
+UC_0076,Actions on Objectives,AO,Lateral movement,AO-LAT,AO-LAT-03,Detect Anomalous Remote Desktop Protocol Connection,3,5,https://attack.mitre.org/wiki/Technique/T1076
+UC_0077,Actions on Objectives,AO,Lateral movement,AO-LAT,AO-LAT-10,Detect Anomalous Usage of Windows Admin Shares,3,5,https://attack.mitre.org/wiki/Technique/T1077
+UC_0078,Actions on Objectives,AO,Account breached,AO-ACC,AO-ACC-01,Detect Unauthorized Usage of Valid Accounts,3,5,https://attack.mitre.org/wiki/Technique/T1078
+UC_0079,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-11,Detect Usage of Multilayer Encryption,3,5,https://attack.mitre.org/wiki/Technique/T1079
+UC_0080,Actions on Objectives,AO,Lateral movement,AO-LAT,AO-LAT-08,Detect Presence Taint Content in Shares,3,5,https://attack.mitre.org/wiki/Technique/T1080
+UC_0081,Actions on Objectives,AO,Credential theft,AO-CRE,AO-CRE-02,Detect Credential Storage in Files,3,5,https://attack.mitre.org/wiki/Technique/T1081
+UC_0082,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-12,Detect System Information Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1082
+UC_0083,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-03,Detect File and Directory Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1083
+UC_0084,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-30,Detect Modifications to Windows Management Instrumentation Event Subscription,3,5,https://attack.mitre.org/wiki/Technique/T1084
+UC_0085,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-16,Detect Anomalous Execution of Rundll32,3,5,https://attack.mitre.org/wiki/Technique/T1085
+UC_0086,Policy Violations,PV,Unauthorized process launched,PV-PRC,PV-PRC-01,Detect Unauthorized Execution of PowerShell,3,5,https://attack.mitre.org/wiki/Technique/T1086
+UC_0087,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-01,Detect Account Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1087
+UC_0088,Actions on Objectives,AO,Privilege escalation,AO-PRI,AO-PRI-03,Detect User Account Control Bypass Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1088
+UC_0089,Policy Violations,PV,Unauthorized modification of technical policy,PV-POL,PV-POL-01,Detect Disabling of Security Tools,3,5,https://attack.mitre.org/wiki/Technique/T1089
+UC_0090,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-03,Detect Anomalous Connection Proxy,3,5,https://attack.mitre.org/wiki/Technique/T1090
+UC_0091,Actions on Objectives,AO,Lateral movement,AO-LAT,AO-LAT-06,Detect Replication Attempt Through Removable Media,3,5,https://attack.mitre.org/wiki/Technique/T1091
+UC_0092,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-02,Detect Communication Attempt Through Removable Media,3,5,https://attack.mitre.org/wiki/Technique/T1092
+UC_0093,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-12,Detect Process Hollowing Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1093
+UC_0094,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-04,Detect Custom Command and Control Protocol,3,5,https://attack.mitre.org/wiki/Technique/T1094
+UC_0095,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-14,Detect Anomalous Usage of Standard Non-Application Layer Protocol,3,5,https://attack.mitre.org/wiki/Technique/T1095
+UC_0096,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-15,Detect Malicious Software with NTFS Extended Attribute Functionality,3,5,https://attack.mitre.org/wiki/Technique/T1096
+UC_0097,Actions on Objectives,AO,Lateral movement,AO-LAT,AO-LAT-02,Detect Pass the Ticket Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1097
+UC_0098,Actions on Objectives,AO,Account breached,AO-ACC,AO-ACC-02,Detect Account Manipulation,3,5,https://attack.mitre.org/wiki/Technique/T1098
+UC_0099,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-19,Detect Malicious Software with Timestomp Functionality,3,5,https://attack.mitre.org/wiki/Technique/T1099
+UC_0100,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-29,Detect Presence of Web Shell,3,5,https://attack.mitre.org/wiki/Technique/T1100
+UC_0101,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-24,Detect Unauthorized Modification of Security Support Provider Registry Keys,3,5,https://attack.mitre.org/wiki/Technique/T1101
+UC_0102,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-16,Detect Unauthorized Usage of Web Service,3,5,https://attack.mitre.org/wiki/Technique/T1102
+UC_0103,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-03,Detect Anomalous AppInit DLL Loading,3,5,https://attack.mitre.org/wiki/Technique/T1103
+UC_0104,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-09,Detect Existence of Multi-Stage Channels,3,5,https://attack.mitre.org/wiki/Technique/T1104
+UC_0105,Actions on Objectives,AO,Lateral movement,AO-LAT,AO-LAT-04,Detect Remote File Copy Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1105
+UC_0106,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-09,Detect Process Execution Attempt through API,3,5,https://attack.mitre.org/wiki/Technique/T1106
+UC_0107,Actions on Objectives,AO,"File corruption, encryption and unauthorized access",AO-FIL,AO-FIL-02,Detect Anomalous File Deletion Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1107
+UC_0108,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-22,Detect Presence of Redundant Access Tool,3,5,https://attack.mitre.org/wiki/Technique/T1108
+UC_0109,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-07,Detect Component Firmware Installation Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1109
+UC_0110,Actions on Objectives,AO,Internal Brute force,AO-BRU,AO-BRU-01,Detect Brute Force Attack,3,5,https://attack.mitre.org/wiki/Technique/T1110
+UC_0111,Actions on Objectives,AO,Credential theft,AO-CRE,AO-CRE-09,Detect Two-Factor Authentication Interception Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1111
+UC_0112,Policy Violations,PV,Unauthorized modification of technical policy,PV-POL,PV-POL-02,Detect Unauthorized Registry Modification Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1112
+UC_0113,Actions on Objectives,AO,Data collection,AO-COL,AO-COL-09,Detect Screen Capture,3,5,https://attack.mitre.org/wiki/Technique/T1113
+UC_0114,Actions on Objectives,AO,Data collection,AO-COL,AO-COL-08,Detect Email Collection,3,5,https://attack.mitre.org/wiki/Technique/T1114
+UC_0115,Actions on Objectives,AO,Data collection,AO-COL,AO-COL-03,Detect Anomalous Clipboard Data,3,5,https://attack.mitre.org/wiki/Technique/T1115
+UC_0116,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-03,Detect Presence of Malicious Signed Binary,3,5,https://attack.mitre.org/wiki/Technique/T1116
+UC_0117,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-15,Detect Anomalous Execution of Regsvr32,3,5,https://attack.mitre.org/wiki/Technique/T1117
+UC_0118,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-01,Detect Usage of InstallUtil,3,5,https://attack.mitre.org/wiki/Technique/T1118
+UC_0119,Actions on Objectives,AO,Data collection,AO-COL,AO-COL-02,Detect Automated Collection,3,5,https://attack.mitre.org/wiki/Technique/T1119
+UC_0120,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-06,Detect Peripheral Device Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1120
+UC_0121,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-13,Detect Anomalous Usage of Regsvcs/Regasm,3,5,https://attack.mitre.org/wiki/Technique/T1121
+UC_0122,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-08,Detect Component Object Model Hijacking,3,5,https://attack.mitre.org/wiki/Technique/T1122
+UC_0123,Actions on Objectives,AO,Data collection,AO-COL,AO-COL-01,Detect Audio Capture,3,5,https://attack.mitre.org/wiki/Technique/T1123
+UC_0124,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-17,Detect System Time Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1124
+UC_0125,Actions on Objectives,AO,Data collection,AO-COL,AO-COL-10,Detect Video Capture,3,5,https://attack.mitre.org/wiki/Technique/T1125
+UC_0126,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-16,Detect Anomalous Removal of Network Share Connection,3,5,https://attack.mitre.org/wiki/Technique/T1126
+UC_0127,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-14,Detect Anomalous Usage of Trusted Developer Utilities,3,5,https://attack.mitre.org/wiki/Technique/T1127
+UC_0128,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-17,Detect Netsh Helper DLL Loading Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1128
+UC_0129,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-10,Detect Process Execution Attempt through Module Load,3,5,https://attack.mitre.org/wiki/Technique/T1129
+UC_0130,Exploitation,EX,Network-based attack,EX-NET,EX-NET-01,Detect Installation of Root Certificate,3,5,https://attack.mitre.org/wiki/Technique/T1130
+UC_0131,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-04,Detect Modifications of Authentication Package Registry Keys,3,5,https://attack.mitre.org/wiki/Technique/T1131
+UC_0132,Command & Control,CC,Suspicious outbound network communication,CC-SNC,CC-SNC-06,Detect Data Encoding,3,5,https://attack.mitre.org/wiki/Technique/T1132
+UC_0133,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-10,Detect Installation of External Remote Services,3,5,https://attack.mitre.org/wiki/Technique/T1133
+UC_0134,Actions on Objectives,AO,Privilege escalation,AO-PRI,AO-PRI-01,Detect Access Token Manipulation Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1134
+UC_0135,Actions on Objectives,AO,Internal reconnaissance,AO-REC,AO-REC-05,Detect Network Share Discovery Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1135
+UC_0136,Actions on Objectives,AO,Account breached,AO-ACC,AO-ACC-03,Detect Unauthorized Account Creation,3,5,https://attack.mitre.org/wiki/Technique/T1136
+UC_0137,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-19,Detect Anomalous Office Application Startup File,3,5,https://attack.mitre.org/wiki/Technique/T1137
+UC_0138,Actions on Objectives,AO,Privilege escalation,AO-PRI,AO-PRI-02,Detect Application Shimming,3,5,https://attack.mitre.org/wiki/Technique/T1138
+UC_0139,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-20,Detect Unauthorized Read of Bash History File,3,5,https://attack.mitre.org/wiki/Technique/T1139
+UC_0140,Actions on Objectives,AO,"File corruption, encryption and unauthorized access",AO-FIL,AO-FIL-01,Detect Malicious Software With Deobfuscate/Decode Functionality for Files or Information,3,5,https://attack.mitre.org/wiki/Technique/T1140
+UC_0141,Actions on Objectives,AO,Credential theft,AO-CRE,AO-CRE-04,Detect Input Prompt,3,5,https://attack.mitre.org/wiki/Technique/T1141
+UC_0142,Actions on Objectives,AO,Credential theft,AO-CRE,AO-CRE-05,Detect Compromise of User Keychain,3,5,https://attack.mitre.org/wiki/Technique/T1142
+UC_0143,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-11,Detect Existence of Hidden Window,3,5,https://attack.mitre.org/wiki/Technique/T1143
+UC_0144,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-07,Detect Gatekeeper Bypass Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1144
+UC_0145,Actions on Objectives,AO,Credential theft,AO-CRE,AO-CRE-07,Detect Theft or Abuse of Private Keys,3,5,https://attack.mitre.org/wiki/Technique/T1145
+UC_0146,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-02,Detect Clear Command History Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1146
+UC_0147,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-10,Detect Hidden Users,3,5,https://attack.mitre.org/wiki/Technique/T1147
+UC_0148,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-08,Unauthorized Modification of HISTCONTROL Variable,3,5,https://attack.mitre.org/wiki/Technique/T1148
+UC_0149,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-02,Detect LC_MAIN Hijacking Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1149
+UC_0150,Actions on Objectives,AO,Privilege escalation,AO-PRI,AO-PRI-09,Detect Unauthorized Plist Modification,3,5,https://attack.mitre.org/wiki/Technique/T1150
+UC_0151,Policy Violations,PV,Unauthorized process launched,PV-PRC,PV-PRC-05,Detect Files with Space after Filename,3,5,https://attack.mitre.org/wiki/Technique/T1151
+UC_0152,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-03,Detect Unauthorized Launchctl Creation,3,5,https://attack.mitre.org/wiki/Technique/T1152
+UC_0153,Policy Violations,PV,Unauthorized process launched,PV-PRC,PV-PRC-04,Detect Shell Execution of Source,3,5,https://attack.mitre.org/wiki/Technique/T1153
+UC_0154,Policy Violations,PV,Unauthorized process launched,PV-PRC,PV-PRC-06,Detect Anomalous Trap Usage,3,5,https://attack.mitre.org/wiki/Technique/T1154
+UC_0155,Exploitation,EX,Application whitelist evasion attempt,EX-AWE,EX-AWE-05,Detect Unauthorized Execution of AppleScript,3,5,https://attack.mitre.org/wiki/Technique/T1155
+UC_0156,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-01,Detect Unauthorized Modifications of .bash_profile and .bashrc,3,5,https://attack.mitre.org/wiki/Technique/T1156
+UC_0157,Actions on Objectives,AO,Privilege escalation,AO-PRI,AO-PRI-05,Detect Dylib Hijacking Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1157
+UC_0158,Actions on Objectives,AO,Detection evasion techniques,AO-EVA,AO-EVA-09,Detect Usage of Hidden Files and Directories,3,5,https://attack.mitre.org/wiki/Technique/T1158
+UC_0159,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-13,Detect Unauthorized Launch Agent Creation,3,5,https://attack.mitre.org/wiki/Technique/T1159
+UC_0160,Actions on Objectives,AO,Privilege escalation,AO-PRI,AO-PRI-07,Detect Unauthorized Launch Daemon Creation,3,5,https://attack.mitre.org/wiki/Technique/T1160
+UC_0161,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-12,Detect Unauthorized LC_LOAD_DYLIB Addition Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1161
+UC_0162,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-15,Detect Unauthorized Login Item Creation,3,5,https://attack.mitre.org/wiki/Technique/T1162
+UC_0163,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-20,Detect Unauthorized Modification of Rc.common File,3,5,https://attack.mitre.org/wiki/Technique/T1163
+UC_0164,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-21,Detect Unauthorized Modification to Re-opened Application List,3,5,https://attack.mitre.org/wiki/Technique/T1164
+UC_0165,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-27,Detect Modifications of Startup Items,3,5,https://attack.mitre.org/wiki/Technique/T1165
+UC_0166,Actions on Objectives,AO,Privilege escalation,AO-PRI,AO-PRI-11,Detect Abuse of Setuid and Setgid Files,3,5,https://attack.mitre.org/wiki/Technique/T1166
+UC_0167,Actions on Objectives,AO,Credential theft,AO-CRE,AO-CRE-08,Detect Securityd Memory Access Attempt,3,5,https://attack.mitre.org/wiki/Technique/T1167
+UC_0168,Actions on Objectives,AO,Installation of persistence mechanism,AO-PER,AO-PER-09,Detect Presence of Unauthorized Cron Job,3,5,https://attack.mitre.org/wiki/Technique/T1168
+UC_0169,Policy Violations,PV,Unauthorized use of high-privileged account,PV-ACC,PV-ACC-01,Detect Unauthorized Usage of Sudo,3,5,https://attack.mitre.org/wiki/Technique/T1169

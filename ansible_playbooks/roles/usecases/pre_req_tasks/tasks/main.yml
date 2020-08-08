@@ -1,0 +1,13 @@
+---
+
+- name: "Beats: Set dynamic variables from beats config"
+  import_tasks: beats_set_var.yml
+  tags: [beats_set_var]
+
+- name: "Beats: Download beat installables if not present"
+  import_tasks: beats_download.yml
+  tags: [beats_download]
+
+- name: "Beats: Build Configs from template"
+  import_tasks: beats_build_configs.yml
+  tags: [beats_build_configs]

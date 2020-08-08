@@ -1,0 +1,10 @@
+---
+
+# -------------------------------------------------------------- #
+# -------------------------------------------------------------- #
+uc_config_dir: "{{src_base}}/{{configs}}/{{usecase_configs}}"
+uc_base_dir: "roles/usecases/"
+uc_base_tasks_dir: "{{uc_base_dir}}/tasks"
+uc_base_dir_template: "{{uc_base_dir}}/build_usecases/uc_templates"
+
+# -------------------------------------------------------------- #

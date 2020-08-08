@@ -1,0 +1,5 @@
+---
+
+- name: "UC: Pre-requisite Checks"
+  import_tasks: uc_prereq_checks.yml
+  tags: [uc_prereq_checks]

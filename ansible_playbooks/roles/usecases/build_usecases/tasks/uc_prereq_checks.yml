@@ -1,0 +1,9 @@
+---
+
+# https://github.com/ansible/ansible/issues/17136 : Due to the bug of fileglob, using another method
+- name: "UC: Build use-cases from ready-made templates"
+  template:
+    src: "{{ item }}"
+    dest: "{{build_base}}/{{buildDir}}/usecases/{{ item | replace('.j2', '') | replace( uc_base_dir_template , '')}}"
+  with_lines:
+    - "find {{uc_base_dir_template}} -type f -name '*.j2'"
