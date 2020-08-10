@@ -1,0 +1,11 @@
+title: Usecases Flow
+
+Ansible Playbook -> Ansible UC Role: Trigger task
+
+Ansible UC Role -->> UseCase Templates: List Available templates
+
+UseCase Templates -->> UC Configs: Lookup
+
+UC Configs -> UseCase Templates: Fill up
+
+Ansible UC Role -> Ready to Deploy: Generate Final List

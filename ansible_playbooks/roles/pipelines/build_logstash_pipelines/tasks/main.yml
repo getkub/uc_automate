@@ -1,0 +1,9 @@
+---
+
+- name: "PC: Pre-requisite Checks"
+  import_tasks: pc_prereq_checks.yml
+  tags: [pc_prereq_checks]
+
+- name: "PC: Build piplines from template"
+  import_tasks: pc_build_pipelines_from_template.yml
+  tags: [pc_build_pipelines_from_template]

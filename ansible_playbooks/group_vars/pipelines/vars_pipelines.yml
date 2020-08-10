@@ -1,0 +1,19 @@
+---
+
+# -------------------------------------------------------------- #
+# UseCase common Configs
+# -------------------------------------------------------------- #
+pc_config_dir: "{{src_base}}/{{configs}}/{{pipeline_configs}}"
+pc_base_dir: "roles/pipelines/"
+pc_base_tasks_dir: "{{uc_base_dir}}/tasks"
+
+# -------------------------------------------------------------- #
+# UseCase Logic Configs
+# -------------------------------------------------------------- #
+pc_base_dir_template: "{{pc_base_dir}}/build_logstash_pipelines/logstash_templates"
+
+# -------------------------------------------------------------- #
+# Lookup Files and Configs loading
+# -------------------------------------------------------------- #
+
+pc_pipline_to_system: "{{pc_config_dir}}/pc_pipline_to_system.csv"

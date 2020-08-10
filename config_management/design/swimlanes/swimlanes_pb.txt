@@ -1,0 +1,15 @@
+title: Playbook Flow
+
+Ansible Playbook -> Ansible PB Role: Trigger task
+
+Ansible PB Role -->> Playbook Templates: List Available templates
+
+Playbook Templates -->> UC Configs: Lookup
+
+UC Configs -> Playbook Templates: Fill up
+
+Ansible PB Role -> Ready to Produce: Generate PB List
+
+Ansible PB Role -> Ready to Produce: Add interesting items (eg Previous tickets)
+
+Ready to Produce -> Pandoc Generator: `Playbooks Various Formats`

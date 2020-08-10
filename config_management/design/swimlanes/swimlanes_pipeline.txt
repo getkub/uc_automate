@@ -1,0 +1,11 @@
+title: Pipeline Flow
+
+Ansible Playbook -> Pipeline Role: Trigger task
+
+Pipeline Role -->> Pipeline Templates: List Available templates
+
+Pipeline Templates -->> Pipeline Configs: Lookup
+
+Pipeline Configs -> Pipeline Templates: Fill up
+
+Pipeline Role -> Ready to Deploy: Generate pipeline files

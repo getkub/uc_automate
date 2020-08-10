@@ -1,0 +1,14 @@
+---
+
+- name: "PC: List templates and get filenames"
+  find:
+      paths: "{{pc_base_dir_template}}"
+      patterns: "*.j2"
+      file_type: file
+  register: pc_pipline_templates
+
+# https://stackoverflow.com/questions/29399581/using-set-facts-and-with-items-together-in-ansible
+- name: "PC: Derive usecases from filenames"
+  set_fact: pc_usecase_derived_list="{{item.path | basename | replace('.conf.j2', '')}}"
+  with_items: "{{pc_pipline_templates.files}}"
+  register: pc_pipeline_derived_list_result

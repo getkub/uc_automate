@@ -1,0 +1,17 @@
+---
+
+- name: "Pipeline: Various Build directories"
+  file:
+    path: "{{build_base}}/{{buildDir}}/piplines/{{item[1]}}"
+    state: "{{item[0]}}"
+    mode: "u=rwx,g=rwx,o=rwx"
+    recurse: yes
+  with_nested:
+    - directory
+    - [ 'logstash_piplines']
+
+# Populate usecase_configs field values
+# data is stored in a variable whose name is the CSV file name without the extension
+- include_csv:
+    src: "{{pc_pipline_to_system}}"
+    outname: "pc_pipline_to_system_list"

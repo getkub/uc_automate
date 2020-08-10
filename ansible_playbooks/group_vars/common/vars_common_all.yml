@@ -9,11 +9,7 @@ build_base: "/tmp/{{project}}"
 buildDir: "buildDir"
 configs: "config_management"
 usecase_configs: "usecase_configs"
-# -------------------------------------------------------------- #
-# Download files Details
-# -------------------------------------------------------------- #
-# -------------------------------------------------------------- #
-
+pipeline_configs: "pipeline_configs"
 # -------------------------------------------------------------- #
 # Individual Configs Directory
 # -------------------------------------------------------------- #

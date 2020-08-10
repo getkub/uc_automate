@@ -1,0 +1,16 @@
+DELETE /api/logstash/pipeline/{{logstash_pipeline_id}}
+
+PUT /api/logstash/pipeline/{{logstash_pipeline_id}}
+{
+  "description": {{logstash_pipeline_description}}
+  "pipeline": "
+      input {
+          stdin {}
+      }
+      output {
+          stdout {}
+      }",
+  "settings": {
+    "queue.type": "persisted"
+  }
+}
