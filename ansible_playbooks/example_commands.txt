@@ -8,3 +8,8 @@ ansible-playbook -i hosts -c local usecases_build.yml
 # -------------------------------------------- #
 # For specific roles use tags
 # -------------------------------------------- #
+
+
+
+# Regex help
+- Convert ctx format and escape from ansible => {{ctx([^\}]+)}}  => {%raw%}{{ctx$1}}{%endraw%}

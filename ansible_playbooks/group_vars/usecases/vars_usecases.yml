@@ -22,4 +22,10 @@ pb_base_dir_template: "{{uc_base_dir}}/build_playbooks/playbook_templates"
 # Lookup Files and Configs loading
 # -------------------------------------------------------------- #
 
-uc_L3_csv: "{{uc_config_dir}}/uc_L3.csv"
+uc_L3_csv: "{{uc_config_dir}}/uc_L3_smaller.csv"
+
+# -------------------------------------------------------------- #
+# Specific Use-cases
+# -------------------------------------------------------------- #
+
+uc_threshold_missing_logs_csv: "{{uc_config_dir}}/specific_usecases/logs_missing_thresholds.csv"

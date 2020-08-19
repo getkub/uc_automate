@@ -15,3 +15,8 @@
 - include_csv:
     src: "{{uc_L3_csv}}"
     outname: "uc_L3_list"
+
+
+- include_csv:
+    src: "{{uc_threshold_missing_logs_csv}}"
+    outname: "uc_threshold_missing_logs_csv_list"

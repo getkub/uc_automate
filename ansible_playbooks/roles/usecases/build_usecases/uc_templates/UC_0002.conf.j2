@@ -1,0 +1,73 @@
+{% for item in uc_threshold_missing_logs_csv_list %}
+
+# ----------  Delete & Create Watcher ------------------ #
+DELETE _watcher/watch/UC_0002_{{item.lm_id}}
+
+PUT _watcher/watch/UC_0002_{{item.lm_id}}
+{
+  "trigger": {
+    "schedule": {
+      "interval": "{{item.lm_expected_time_slot_hrs}}"
+    }
+  },
+  "input": {
+    "search": {
+      "request": {
+        "search_type": "query_then_fetch",
+        "indices": [
+          "{{item.lm_expected_index}}"
+        ],
+        "rest_total_hits_as_int": true,
+        "body": {
+          "size": 0,
+          "query": {
+            "bool": {
+              "filter": {
+                "range": {
+                  "@timestamp": {
+                    "gte": "{%raw%}{{ctx.trigger.scheduled_time}}{%endraw%}||-{{item.lm_expected_time_slot_hrs}}",
+                    "lte": "{%raw%}{{ctx.trigger.scheduled_time}}{%endraw%}",
+                    "format": "strict_date_optional_time||epoch_millis"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "condition": {
+    "script": {
+      "source": "if (ctx.payload.hits.total > params.threshold) { return true; } return false;",
+      "lang": "painless",
+      "params": {
+        "threshold": {{item.lm_expected_event_count}}
+      }
+    }
+  },
+  "actions": {
+    "index_1": {
+      "index": {
+        "index": "summaryindex_kk_threshold_alert_sample"
+      }
+    }
+  },
+  "transform": {
+    "script": {
+      "source": "HashMap scheduled_time = new HashMap(); scheduled_time.scheduled_time = ctx.trigger.scheduled_time; return scheduled_time;",
+      "lang": "painless",
+      "params": {
+        "threshold": {{item.lm_expected_event_count}}
+      }
+    }
+  },
+  "metadata": {
+    "xpack": {
+      "type": "json"
+    },
+    "name": "UC_0002_{{item.lm_id}}"
+  }
+}
+
+{% endfor %}
