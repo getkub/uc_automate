@@ -1,7 +1,7 @@
 L3_UseCaseId,L1_Use_Case_Name,L1_Use_Case_Identifier,L2_Use_Case_Name,L2_Use_Case_Identifier,L3_Rule_Identifier,L3_Technical_Use_Case_Name,L3_Severity,L3_Priority,L3_Use_Case_Description
-UC_0182,Defense Evasion,DE,Disabling Security Tools,DE-DST,DE-DST-FW_NETSH,Disable Windows Firewall Rules via Netsh,6,8,https://attack.mitre.org/techniques/T1562/
-UC_0183,Defense Evasion,DE,Indicator Removal on Host,DE-IND,DE-IND-CLEAR_WINLOG,Clearing Windows Event Logs,3,7,https://attack.mitre.org/techniques/T1070/
-UC_0184,Execution,EX,Trusted Developer Utilities,EX-TDU,EX-TDU-NETWORK_CONN,Unusual Process Network Connection,3,7,https://attack.mitre.org/techniques/T1127/
-UC_0185,Privilege Escalation,PE,Sudo,PE-SUD,PE-SUD-SUDOERS_FILE,Sudoers File Modification,3,7,https://attack.mitre.org/techniques/T1169/
-UC_0186,Defense Evasion,DE,Disabling Security Tools,DE-DST,DE-DST-SELINUX_DISABLE,Potential Disabling of SELinux,6,8,https://attack.mitre.org/techniques/T1089/
-UC_0187,Defense Evasion,DE,Clear Command History,DE-CLR,DE-CLR-BASH_HISTORY,Deletion of Bash Command Line History,6,8,https://attack.mitre.org/techniques/T1146/
+UC_0001,Defense Evasion,DE,Disabling Security Tools,DE-DST,DE-DST-FW_NETSH,Disable Windows Firewall Rules via Netsh,6,8,https://attack.mitre.org/techniques/T1562/
+UC_0002,Defense Evasion,DE,Indicator Removal on Host,DE-IND,DE-IND-CLEAR_WINLOG,Clearing Windows Event Logs,3,7,https://attack.mitre.org/techniques/T1070/
+UC_0003,Execution,EX,Trusted Developer Utilities,EX-TDU,EX-TDU-NETWORK_CONN,Unusual Process Network Connection,3,7,https://attack.mitre.org/techniques/T1127/
+UC_0004,Privilege Escalation,PE,Sudo,PE-SUD,PE-SUD-SUDOERS_FILE,Sudoers File Modification,3,7,https://attack.mitre.org/techniques/T1169/
+UC_0005,Defense Evasion,DE,Disabling Security Tools,DE-DST,DE-DST-SELINUX_DISABLE,Potential Disabling of SELinux,6,8,https://attack.mitre.org/techniques/T1089/
+UC_0006,Defense Evasion,DE,Clear Command History,DE-CLR,DE-CLR-BASH_HISTORY,Deletion of Bash Command Line History,6,8,https://attack.mitre.org/techniques/T1146/

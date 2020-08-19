@@ -1,9 +1,9 @@
 {% for item in uc_threshold_missing_logs_csv_list %}
 
 # ----------  Delete & Create Watcher ------------------ #
-DELETE _watcher/watch/UC_0002_{{item.lm_id}}
+DELETE _watcher/watch/{{L3_UseCaseId}}_{{item.lm_id}}
 
-PUT _watcher/watch/UC_0002_{{item.lm_id}}
+PUT _watcher/watch/{{L3_UseCaseId}}_{{item.lm_id}}
 {
   "trigger": {
     "schedule": {
@@ -66,7 +66,7 @@ PUT _watcher/watch/UC_0002_{{item.lm_id}}
     "xpack": {
       "type": "json"
     },
-    "name": "UC_0002_{{item.lm_id}}"
+    "name": "{{L3_UseCaseId}}_{{item.lm_id}}_{{L3_Rule_Identifier}}"
   }
 }
 
