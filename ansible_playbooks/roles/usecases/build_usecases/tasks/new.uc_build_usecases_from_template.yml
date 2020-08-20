@@ -1,0 +1,33 @@
+---
+
+- name: "UC: List templates and get filenames"
+  find:
+      paths: "{{uc_base_dir_template}}"
+      patterns: "*.j2"
+      file_type: file
+  register: uc_usecase_templates
+
+# ONLY from ansible 2.8
+- read_csv:
+    path: "{{uc_L3_csv}}"
+    key: L3_UseCaseId
+  register: uc_L3_list
+
+# https://stackoverflow.com/questions/63315410/ansible-how-to-do-lookup-in-a-csv-file-and-populate-relevant-file-contents
+- name: "UC: Identify template files and Set CSV variables into the template"
+  template:
+    src: "{{ item }}"
+    dest: "{{ my_filename }}"
+  loop: "{{ uc_usecase_templates.files|map(attribute='path')|list }}"
+  vars:
+    my_template: "{{ item|basename }}"
+    my_filename: "{{ (my_template|splitext).0 }}"
+    L3_UseCaseId: "{{ my_template.split('.').0 }}"
+    L1_Use_Case_Name: "{{ uc_L3_list.dict[L3_UseCaseId]['L1_Use_Case_Name'] }}"
+    L1_Use_Case_Identifier: "{{ uc_L3_list.dict[L3_UseCaseId]['L1_Use_Case_Identifier'] }}"
+    L2_Use_Case_Name: "{{ uc_L3_list.dict[L3_UseCaseId]['L2_Use_Case_Name'] }}"
+    L3_Rule_Identifier: "{{ uc_L3_list.dict[L3_UseCaseId]['L3_Rule_Identifier'] }}"
+    L3_Technical_Use_Case_Name: "{{ uc_L3_list.dict[L3_UseCaseId]['L3_Technical_Use_Case_Name'] }}"
+    L3_Severity: "{{ uc_L3_list.dict[L3_UseCaseId]['L3_Severity'] }}"
+    L3_Priority: "{{ uc_L3_list.dict[L3_UseCaseId]['L3_Priority'] }}"
+    L3_Use_Case_Description: "{{ uc_L3_list.dict[L3_UseCaseId]['L3_Use_Case_Description'] }}"
