@@ -6,3 +6,19 @@
       patterns: "*.md"
       file_type: file
   register: pb_playbook_templates
+
+- read_csv:
+    path: "{{ template_test_csv }}"
+  register: template_test_csv_list
+
+- debug:
+     msg: "template_test_csv_list= {{template_test_csv_list}}"
+
+- name: "PB: Template Loop"
+  template:
+    src: "{{ pb_base_dir_template }}/UC_0001.playbook.md"
+    dest: "{{build_base}}/{{buildDir}}/playbooks/{{threshold.lm_expected_host}}.md"
+    mode: preserve
+  loop: "{{template_test_csv_list.list}}"
+  loop_control:
+    loop_var: threshold

@@ -2,13 +2,13 @@
 
 - name: "UC: Various Build directories"
   file:
-    path: "{{build_base}}/{{buildDir}}/playbooks/{{item[1]}}"
+    path: "{{build_base}}/{{buildDir}}/{{item[1]}}"
     state: "{{item[0]}}"
     mode: "u=rwx,g=rwx,o=rwx"
     recurse: yes
   with_nested:
     - directory
-    - [ 'usecases_logic', 'usecases_ticket']
+    - [ 'playbooks']
 
 # Populate usecase_configs field values
 # data is stored in a variable whose name is the CSV file name without the extension

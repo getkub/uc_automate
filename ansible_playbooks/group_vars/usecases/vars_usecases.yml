@@ -29,3 +29,4 @@ uc_L3_csv: "{{uc_config_dir}}/uc_L3_smaller.csv"
 # -------------------------------------------------------------- #
 
 uc_threshold_missing_logs_csv: "{{uc_config_dir}}/specific_usecases/logs_missing_thresholds.csv"
+template_test_csv: "{{uc_config_dir}}/specific_usecases/template_test.csv"
